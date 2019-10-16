@@ -5,7 +5,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   width: 100%;
@@ -18,26 +17,22 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right top;
 }
-
 a {
   outline: none;
   text-decoration: none;
   transition: all 0.25s ease 0s;
   color: #fff;
 }
-
 img {
   border: none;
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-.yellow{
+.yellow {
   color: #fdeb1f;
 }
-
-.label{
+.label {
   background: #282727;
   border-radius: 5px;
   font-size: 1.4em;
@@ -45,22 +40,18 @@ img {
   padding: 10px 20px;
   display: block;
 }
-
 .list {
   padding: 20px;
 }
-
-.item{
+.item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
   align-items: center;
 }
-
-.item:nth-child(even){
+.item:nth-child(even) {
   background: #333232;
 }
-
-.info{
+.info {
   padding: 5px;
 }

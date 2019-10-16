@@ -1,0 +1,32 @@
+<div id="planets_page">
+    <div class="label">Planets</div>
+  
+    <div class="list">
+  
+      <div class="item list_header">
+          <div class="info yellow">Name</div>  
+          <div class="info yellow">Rotation Period</div>  
+          <div class="info yellow">Orbital Period</div>  
+          <div class="info yellow">Diameter</div>  
+          <div class="info yellow">Climate</div>  
+          <div class="info yellow">Gravity</div>  
+          <div class="info yellow">Terrain</div>  
+          <div class="info yellow">Surface Water</div>  
+          <div class="info yellow">Population</div>  
+      </div>
+  
+      <div *ngFor="let planet of planets$ | async" class="item">
+        <div class="info">{{planet.name}}</div>  
+        <div class="info">{{planet.rotation_period}}</div>  
+        <div class="info">{{planet.orbital_period}}</div>  
+        <div class="info">{{planet.diameter}}</div>  
+        <div class="info">{{planet.climate}}</div>  
+        <div class="info">{{planet.gravity}}</div>  
+        <div class="info">{{planet.terrain}}</div>  
+        <div class="info">{{planet.surface_water}}</div>  
+        <div class="info">{{planet.population}}</div>  
+      </div>
+  
+      <app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+    </div>
+  </div>

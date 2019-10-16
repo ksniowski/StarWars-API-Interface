@@ -1,0 +1,28 @@
+<div id="characters_page">
+  <div class="label">Characters</div>
+
+  <div class="list">
+
+    <div class="item list_header">
+        <div class="info yellow">Name</div>  
+        <div class="info yellow">Gender</div>  
+        <div class="info yellow">Hair Color</div>  
+        <div class="info yellow">Eye Color</div>  
+        <div class="info yellow">Height</div>  
+        <div class="info yellow">Mass</div>  
+        <div class="info yellow">Skin Color</div>  
+    </div>
+
+    <div *ngFor="let character of characters$ | async" class="item">
+      <div class="info">{{character.name}}</div>  
+      <div class="info">{{character.gender}}</div>  
+      <div class="info">{{character.hair_color}}</div>  
+      <div class="info">{{character.eye_color}}</div>  
+      <div class="info">{{character.height}}</div>  
+      <div class="info">{{character.mass}}</div>  
+      <div class="info">{{character.skin_color}}</div>  
+    </div>
+
+    <app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+  </div>
+</div>

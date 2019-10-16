@@ -1,0 +1,36 @@
+<div id="starships_page">
+    <div class="label">Starships</div>
+  
+    <div class="list">
+  
+      <div class="item list_header">
+          <div class="info yellow">Name</div>  
+          <div class="info yellow">Model</div>  
+          <div class="info yellow">Starship Class</div>  
+          <div class="info yellow">Manufacturer</div>  
+          <div class="info yellow">Cost in credits</div>  
+          <div class="info yellow">Length</div>  
+          <div class="info yellow">Crew</div>  
+          <div class="info yellow">Passengers</div>  
+          <div class="info yellow">Cargo capacity</div>  
+          <div class="info yellow">Consumables</div>  
+          <div class="info yellow">Hyperdrive rating</div>  
+      </div>
+  
+      <div *ngFor="let starship of starships$ | async" class="item">
+        <div class="info">{{starship.name}}</div>  
+        <div class="info">{{starship.model}}</div>  
+        <div class="info">{{starship.starship_class}}</div>  
+        <div class="info">{{starship.manufacturer}}</div>  
+        <div class="info">{{starship.cost_in_credits}}</div>  
+        <div class="info">{{starship.length}}</div>  
+        <div class="info">{{starship.crew}}</div>  
+        <div class="info">{{starship.passengers}}</div>  
+        <div class="info">{{starship.cargo_capacity}}</div>  
+        <div class="info">{{starship.consumables}}</div>  
+        <div class="info">{{starship.hyperdrive_rating}}</div>  
+      </div>
+  
+      <app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+    </div>
+  </div>

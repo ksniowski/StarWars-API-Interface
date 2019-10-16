@@ -1,0 +1,46 @@
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+header {
+  background: url('../assets/img/header_bg.jpg');
+  display: flex;
+  flex-wrap: wrap;
+}
+header #logo {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+header #logo img {
+  max-height: 100px;
+  margin: auto;
+}
+header #menu {
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  background: #000;
+}
+header #menu .navbar-nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 15px;
+}
+header #menu .nav-link {
+  padding: 15px 40px;
+  border-right: 1px solid #333;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+header #menu .nav-link:first-of-type {
+  border-left: 1px solid #333;
+}
+header #menu .nav-link:hover {
+  color: #999;
+}
+#content {
+  padding-top: 30px;
+}
